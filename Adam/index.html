@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landenquiz voor Adam</title>
+  <meta
+    name="description"
+    content="Een speelse landenquiz met landen, hoofdsteden en wereldfeiten."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+    <span class="grid"></span>
+  </div>
+
+  <main class="layout">
+    <section class="panel hero">
+      <p class="eyebrow">Adam map</p>
+      <h1>Landenquiz</h1>
+      <p class="lead">
+        Test je kennis over landen, hoofdsteden en wereldfakten in een quiz die er goed uitziet en lekker snel speelt.
+      </p>
+
+      <div class="stats-grid" aria-label="Quizstatistieken">
+        <article class="stat-card">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </article>
+        <article class="stat-card">
+          <span>Vraag</span>
+          <strong id="questionCount">1/10</strong>
+        </article>
+        <article class="stat-card">
+          <span>Streak</span>
+          <strong id="streakCount">0</strong>
+        </article>
+        <article class="stat-card">
+          <span>Beste</span>
+          <strong id="bestScore">0</strong>
+        </article>
+      </div>
+
+      <div class="hero-note">
+        <p>Elke ronde pakt 10 vragen uit een grotere set, dus opnieuw spelen blijft leuk.</p>
+      </div>
+    </section>
+
+    <section class="panel quiz-shell">
+      <div id="quizView">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow small">Categorie</p>
+            <h2 id="category">Landenquiz</h2>
+          </div>
+          <div class="chip" id="questionStep">Vraag 1</div>
+        </div>
+
+        <p id="questionText" class="question-text"></p>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+
+        <p class="instruction">Kies het juiste antwoord. Je kunt ook 1 t/m 4 gebruiken op je toetsenbord.</p>
+
+        <div id="answers" class="answers" role="list"></div>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+
+        <div class="actions">
+          <button id="nextBtn" class="primary" hidden>Volgende vraag</button>
+          <button id="restartBtn" class="ghost">Opnieuw starten</button>
+        </div>
+      </div>
+
+      <div id="resultView" class="result-view" hidden>
+        <p class="eyebrow small">Eindscore</p>
+        <h2 id="resultTitle">Klaar!</h2>
+        <p id="resultSummary" class="result-summary"></p>
+
+        <div class="result-score">
+          <strong id="finalScore">0/10</strong>
+          <span id="finalLabel">Nog een ronde?</span>
+        </div>
+
+        <div id="reviewList" class="review-list"></div>
+
+        <div class="actions">
+          <button id="playAgainBtn" class="primary">Nog een keer</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
