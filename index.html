@@ -15,10 +15,10 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Naar boven">AB</a>
       <nav aria-label="Hoofdmenu">
         <ul class="nav-list">
           <li><a href="#over-mij">Over mij</a></li>
+          <li><a href="#projecten">Projecten</a></li>
         </ul>
       </nav>
     </div>
@@ -30,8 +30,9 @@
     <section id="over-mij" class="section">
       <div class="container about">
 
+        <h1 class="name">Adam Bouzekkoura</h1>
+
         <div class="about-text">
-          <h1 class="name">Adam Bouzekkoura</h1>
           <h2 class="section-title">Over mij</h2>
           <p class="intro">
             Ik ben Adam, student Software Development (MBO 4) aan ROC Mondriaan in Delft.
@@ -44,6 +45,20 @@
             <li>Rijswijk</li>
             <li>Stage vanaf feb 2027</li>
             <li>Nederlands / Engels</li>
+          </ul>
+
+          <!-- Skills -->
+          <ul class="skills-row" aria-label="Skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>PHP</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>GitHub</li>
           </ul>
         </div>
 
@@ -68,6 +83,42 @@
           </ol>
         </div>
 
+      </div>
+    </section>
+
+    <!-- Projecten -->
+    <section id="projecten" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projecten</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="img/projecten/budget-buddy.jpg" alt="Dashboard van Budget Buddy" class="project-img" loading="lazy">
+            <h3 class="project-title">Budget Buddy</h3>
+            <p class="project-text">
+              Een Symfony-app om je geld bij te houden. In één dashboard zie je je budget,
+              uitgaven en inkomsten per categorie. Teamproject, periode 5.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <img src="img/projecten/collectables.jpg" alt="Voorpagina van Collectables" class="project-img" loading="lazy">
+            <h3 class="project-title">Collectables</h3>
+            <p class="project-text">
+              Een webapplicatie om verzamelobjecten toe te voegen, te bekijken en te beheren,
+              met naam, categorie, beschrijving en afbeelding. Teamproject, periode 4.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <img src="img/projecten/jobnet.jpg" alt="Voorpagina van JobNet" class="project-img" loading="lazy">
+            <h3 class="project-title">JobNet</h3>
+            <p class="project-text">
+              Een LinkedIn-achtig platform waar je je kunt registreren, kunt inloggen en een
+              eigen profiel hebt. Teamproject, periode 3.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
