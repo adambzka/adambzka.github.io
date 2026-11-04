@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Bouzekkoura | Portfolio</title>
-  <meta name="description" content="Portfolio van Adam Bouzekkoura, student Software Development aan ROC Mondriaan in Delft.">
+  <meta name="description" content="Portfolio van Adam Bouzekkoura, student Software Developer – AI Engineer aan ROC Mondriaan in Delft.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,7 @@
           <li><a href="#over-mij">Over mij</a></li>
           <li><a href="#projecten">Projecten</a></li>
           <li><a href="#certificaten">Certificaten</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,15 +37,15 @@
         <div class="about-text">
           <h2 class="section-title">Over mij</h2>
           <p class="intro">
-            Ik ben Adam, student Software Development (MBO 4) aan ROC Mondriaan in Delft.
+            Ik ben Adam, student Software Developer &ndash; AI Engineer aan ROC Mondriaan in Delft.
             Ik werk zowel aan de frontend als de backend: van database tot de interface die
-            mensen gebruiken. Vanaf februari 2027 ben ik op zoek naar een stage in
+            mensen gebruiken. Vanaf 7 september 2027 ben ik op zoek naar een stage in
             softwareontwikkeling.
           </p>
 
           <ul class="facts">
             <li>Rijswijk</li>
-            <li>Stage vanaf feb 2027</li>
+            <li>Stage vanaf 7 sept 2027</li>
             <li>Nederlands / Engels</li>
           </ul>
 
@@ -67,14 +68,14 @@
           <h3 class="timeline-title">Opleiding &amp; ervaring</h3>
           <ol class="timeline">
             <li class="timeline-item">
-              <span class="timeline-date">2025 – heden</span>
-              <span class="timeline-role">Software Development, MBO 4</span>
-              <span class="timeline-place">ROC Mondriaan, Delft</span>
-            </li>
-            <li class="timeline-item">
-              <span class="timeline-date">2024 – heden</span>
+              <span class="timeline-date">mei 2026 – heden</span>
               <span class="timeline-role">Gastheer</span>
               <span class="timeline-place">Pieter van Foreest</span>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-date">2025 – heden</span>
+              <span class="timeline-role">Software Developer &ndash; AI Engineer</span>
+              <span class="timeline-place">ROC Mondriaan, Delft</span>
             </li>
             <li class="timeline-item">
               <span class="timeline-date">2021 – 2025</span>
@@ -136,7 +137,7 @@
               <p class="cert-meta">ROC Mondriaan · maart 2026</p>
               <p class="cert-text">
                 80 uur Maatschappelijke Diensttijd bij Can I Dream, als onderdeel van mijn
-                opleiding Software Development.
+                opleiding Software Developer &ndash; AI Engineer.
               </p>
             </div>
           </article>
@@ -156,7 +157,61 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+
+        <div class="contact-text">
+          <h2 class="section-title">Contact</h2>
+          <p class="intro">
+            Heb je een vraag of een stageplek? Stuur me een bericht, dan neem ik zo snel
+            mogelijk contact met je op.
+          </p>
+        </div>
+
+        <!-- FormSubmit stuurt het formulier door naar mijn mail -->
+        <form class="contact-form" action="https://formsubmit.co/adambouzekkoura1@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nieuw bericht via je portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://adambzka.github.io/#contact">
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" autocomplete="name" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" rows="5" required></textarea>
+
+          <button type="submit" class="contact-button">Versturen</button>
+        </form>
+
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Adam Bouzekkoura</p>
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.linkedin.com/in/adambouzekkoura/" target="_blank" rel="noopener">
+            <svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.777 13.019H3.555V9h3.559v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/adambzka" target="_blank" rel="noopener">
+            <svg class="footer-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 </html>
